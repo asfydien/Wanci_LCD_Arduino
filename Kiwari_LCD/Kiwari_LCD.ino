@@ -20,14 +20,13 @@
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
 
-String bulan[] = {"Januari", "Pebruari", "Maret", "April", 
-                  "Mei", "Juni", "Juli", "Agustus",
-                  "Semptember", "Oktober", "Nopember", "Desember"}; 
+String bulan[] = {"Januari", "Pebruari", "Maret", "April", "Mei", "Juni", 
+                  "Juli","Agustus", "Semptember", "Oktober", "Nopember", "Desember"}; 
 
-String hari[] = {"Senen", "Salasa", "Rebo", "Kemis", "Juma'ah", "Saptu", "Ahad"};
+String hari[]  = {"Senen", "Salasa", "Rebo", "Kemis", "Juma'ah", "Saptu", "Ahad"};
 
-uint8_t colon[8] = {0x0,0x0,0x4,0x0,0x0,0x4,0x0, 0x0};
-uint8_t ge[8]     = {0x0,0x0,0xf,0x11,0x11,0xf,0x1,0xe};
+uint8_t colon[8]    = {0x0,0x0,0x4,0x0,0x0,0x4,0x0, 0x0};
+uint8_t ge[8]       = {0x0,0x0,0xf,0x11,0x11,0xf,0x1,0xe};
 //uint8_t koma[8]   = {0x0,0x0,0x0,0x0,0x0,0xc,0x4,0x8};
 
 tmElements_t tm;
